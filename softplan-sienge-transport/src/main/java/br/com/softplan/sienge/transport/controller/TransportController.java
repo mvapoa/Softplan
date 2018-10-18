@@ -43,6 +43,7 @@ public class TransportController {
 		return result;
 	}
 
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value = "/insertVehicle", method = RequestMethod.POST)
 	public ResultDTO insertVehicle(@RequestBody Vehicle request) {
 		ResultDTO result = new ResultDTO();
@@ -58,6 +59,7 @@ public class TransportController {
 		return result;
 	}
 
+	@CrossOrigin(origins = "*")
 	@RequestMapping(value = "/calculateTransport", method = RequestMethod.POST)
 	public ResultDTO calculateTransport(@RequestBody CalculateTransportDTO request) {
 		ResultDTO result = new ResultDTO();
