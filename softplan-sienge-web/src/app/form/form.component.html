@@ -1,0 +1,30 @@
+<div>
+  <mat-toolbar color="primary">
+    <span>SOFTPLAN SIENGE WEB</span>
+  </mat-toolbar>
+
+  <mat-card>
+    <form class="example-form">
+      <div class="example-container">
+        <mat-form-field>
+          <input matInput [(ngModel)]="distancePaved" name="distancePaved" mask='99999' placeholder="Distância em Rodovia Pavimentada">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput [(ngModel)]="distanceUnpaved" name="distanceUnpaved" mask='99999' placeholder="Distância em Rodovia Não-Pavimentada">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select [(ngModel)]="vehicle" name="vehicle" placeholder="Veículo Utilizado">
+            <mat-option *ngFor="let vehicle of vehicles" [value]="vehicle.key">
+              {{ vehicle.name | uppercase }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput [(ngModel)]="freigth" name="freigth" mask='99999' placeholder="Carga Transportada">
+        </mat-form-field>
+      </div>
+
+      <button (click)="calculate()" mat-button>Calcular</button>
+    </form>
+  </mat-card>
+</div>
