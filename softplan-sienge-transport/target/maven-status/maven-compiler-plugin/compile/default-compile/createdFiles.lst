@@ -1,0 +1,16 @@
+br\com\softplan\sienge\transport\service\TransportationManagementService.class
+br\com\softplan\sienge\transport\model\Roadway.class
+br\com\softplan\sienge\transport\model\Vehicle.class
+br\com\softplan\sienge\transport\service\TransportationManagementServiceImpl.class
+br\com\softplan\sienge\transport\repository\ParameterRepository.class
+br\com\softplan\sienge\transport\repository\VehicleRepository.class
+br\com\softplan\sienge\transport\model\dto\CalculateTransportDTO.class
+br\com\softplan\sienge\transport\model\dto\ResultDTO.class
+br\com\softplan\sienge\transport\model\Parameter.class
+br\com\softplan\sienge\transport\security\MethodSecurityConfig.class
+br\com\softplan\sienge\transport\TransportApp.class
+br\com\softplan\sienge\transport\model\Transport.class
+br\com\softplan\sienge\transport\bootstrap\ApplicationBootstrap.class
+br\com\softplan\sienge\transport\controller\TransportController.class
+br\com\softplan\sienge\transport\model\RoadwayDistance.class
+br\com\softplan\sienge\transport\repository\RoadwayRepository.class
